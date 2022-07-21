@@ -1,0 +1,26 @@
+/* form */
+label  {
+   position: absolute;
+   top: 50%;
+   left: 10px;
+   transform: translateY(-50%);
+   pointer-events: none;
+   transition: all .2s linear;
+}
+label[for="productSearch"] {
+   left: 26%;
+}
+:is(input , textarea):focus + label ,
+:is(input , textarea):not(:placeholder-shown) + label {
+   top: 0;
+   transform: translateY(0) ;
+   font-size: .65rem;
+}
+/* table */
+.table-responsive {
+   overflow-y: auto;
+   height: 350px;
+}
+:is(lord-icon, .icon-table) {
+   cursor: pointer;
+}
